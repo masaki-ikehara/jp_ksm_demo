@@ -17,7 +17,7 @@ jobs:
           secrets: |-
               # Reference records by UID
               IZhsUYqNgUZ7IwVZxRClnA/field/password > PASSWORD
-              IZhsUYqNgUZ7IwVZxRClnA/field/password > env:PASSWORD
+              # IZhsUYqNgUZ7IwVZxRClnA/field/password > env:PASSWORD
               # uid234/field/login > LOGIN
               # uid234/custom_field/Cust1 > env:CUST1
               # uid321/file/Certificate.crt > file:/tmp/Certificate.crt
