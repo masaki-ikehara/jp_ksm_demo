@@ -18,9 +18,14 @@ jobs:
         IZhsUYqNgUZ7IwVZxRClnA/field/login > lng
         IZhsUYqNgUZ7IwVZxRClnA/field/login > env:lng
 
-   - name: View login
+   - name: Debug KSM Output
      run: |
-      echo "password: ${{ env.pwd }}"
-      echo "login: ${{ env.lng }}"
-      echo "password: $pwd_value"
-      echo "login: $lng_value"
+      echo "pwd: ${{ steps.ksecrets.outputs.pwd }}"
+      echo "lng: ${{ steps.ksecrets.outputs.lng }}"
+
+#   - name: View login
+#     run: |
+#      echo "password: ${{ env.pwd }}"
+#      echo "login: ${{ env.lng }}"
+#      echo "password: $pwd_value"
+#      echo "login: $lng_value"
