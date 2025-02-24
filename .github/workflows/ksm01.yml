@@ -21,4 +21,4 @@ jobs:
    - name: View login
      run: |
       echo "password: ${{ env.pwd }}"
-      # echo "login: ${{ env.lng }}"
+      echo "login: ${{ env.lng }}"
