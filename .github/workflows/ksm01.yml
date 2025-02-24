@@ -15,14 +15,14 @@ jobs:
           keeper-secret-config: ${{ secrets.KSM_CONFIG }}
           secrets: |-
               # Reference records by UID
-              uid123/field/password > PASSWORD
-              uid234/field/password > env:PASSWORD
-              uid234/field/login > LOGIN
-              uid234/custom_field/Cust1 > env:CUST1
-              uid321/file/Certificate.crt > file:/tmp/Certificate.crt
+              IZhsUYqNgUZ7IwVZxRClnA/field/password > PASSWORD
+              IZhsUYqNgUZ7IwVZxRClnA/field/password > env:PASSWORD
+              # uid234/field/login > LOGIN
+              # uid234/custom_field/Cust1 > env:CUST1
+              # uid321/file/Certificate.crt > file:/tmp/Certificate.crt
               # Reference records by title - see Keeper Notation for full detail
-              Server1/field/password > PASSWORD1
-              Server2/field/password > PASSWORD2
+              # Server1/field/password > PASSWORD1
+              # Server2/field/password > PASSWORD2
 
       # View secret stored into 'PASSWORD' environment variable
       - name: Print password
